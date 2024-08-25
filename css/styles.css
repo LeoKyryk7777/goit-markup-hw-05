@@ -529,10 +529,12 @@ display: flex;
         width: 264px;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: #2e2f42;
+        background-color: transparent;
         padding-left: 16px;
         resize: none;
-            outline: none;   
+            outline: none;
+            line-height: 2;
+            letter-spacing: 0.04em;
             color: #fff;
             transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -550,7 +552,7 @@ border: 1px solid #31D0AA;
 .submit-btn {
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
             font-weight: 500;
             font-size: 16px;
@@ -564,6 +566,7 @@ border: 1px solid #31D0AA;
         background: #4d5ae5;
         border: none;
         margin-left: 22px;
+        cursor: pointer;
         
 }
 
