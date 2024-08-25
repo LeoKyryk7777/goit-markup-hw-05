@@ -465,25 +465,23 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-subscribe-div">
           <p class="subscribe-text">Subscribe</p>
-          <form>
-            <div class="subscribe-div">
-              <label class="subscribe-form-label">
-                <input
-                  class="subscribe-input"
-                  type="email"
-                  name="user-email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="submit-btn" type="submit">
-                Subscribe
-                <svg class="subscribe-svg" width="24" height="20">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="footer-form">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="submit-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-svg" width="24" height="20">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -492,22 +490,28 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
-          <svg class="" width="8" height="8">
+          <svg class="modal-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form>
-          <div class="form--wraper-cont">
+        <form class="footer-form">
+          <div class="form-wraper-cont">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-cont-input">
-              <input class="modal-input" type="text" id="user-name" required />
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
               <svg class="modal-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-Vector-1"></use>
               </svg>
             </div>
           </div>
-          <div class="form--wraper-cont">
+          <div class="form-wraper-cont">
             <label class="modal-form-label" for="user-tell">Phone</label>
             <div class="modal-cont-input">
               <input class="modal-input" type="tel" id="user-tell" required />
@@ -516,7 +520,7 @@
               </svg>
             </div>
           </div>
-          <div class="form--wraper-cont">
+          <div class="form-wraper-cont">
             <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-cont-input">
               <input
@@ -530,7 +534,7 @@
               </svg>
             </div>
           </div>
-          <div class="form--wraper-cont-coment">
+          <div class="form-wraper-cont-coment">
             <label class="modal-form-label-coment" for="user-coment"
               >Comment</label
             >

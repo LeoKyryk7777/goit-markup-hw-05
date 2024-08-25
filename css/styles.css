@@ -330,6 +330,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: #f4f4fd;
 
 }
+.ourteam-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ourteam-link:hover,
 .ourteam-link:focus {
@@ -491,6 +496,7 @@ display: flex;
     background-color: #31D0AA;
 }
 
+
 .subscribe-text {
         font-weight: 500;
         font-size: 16px;
@@ -500,9 +506,11 @@ display: flex;
         margin-bottom: 16px;
 }
 
-.subscribe-div {
+.footer-form {
     display: flex;
+    gap: 24px;
 }
+
 
 .subscribe-form-label {
     font-family: "Roboto", sans-serif;
@@ -574,9 +582,10 @@ border: 1px solid #31D0AA;
     background: rgba(46, 47, 66, 0.4);
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 
 .modal {
 background-color: #fcfcfc;
@@ -589,6 +598,7 @@ min-height: 584px;
 padding: 72px 24px 24px 24px;
 transform: translate(-50%, -50%);
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -597,11 +607,6 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     opacity: 1;
 }
 
-.ourteam-svg {
-display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .modal-close-btn {
     position: absolute;
@@ -614,10 +619,14 @@ display: flex;
     height: 24px;
     line-height: 0;
     padding: 0;
-    border: none;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-svg {
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -637,7 +646,7 @@ border: none;
         margin-bottom: 16px;
 }
 
-.form--wraper-cont {
+.form-wraper-cont {
     margin-bottom: 8px;
 }
 
@@ -662,7 +671,9 @@ border: none;
      border-radius: 4px;
      padding-left: 38px;
      outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -685,7 +696,7 @@ border: none;
     fill: #4d5ae5;
 }
 
-.form--wraper-cont-coment {
+.form-wraper-cont-coment {
         font-weight: 400;
         font-size: 12px;
         line-height: 1.16667;
@@ -703,7 +714,7 @@ border: none;
         margin-bottom: 4px;
 }
 
-.form--wraper-cont-coment {
+.form-wraper-cont-coment {
     margin-bottom: 14px;
 }
 
